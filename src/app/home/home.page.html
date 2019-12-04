@@ -15,11 +15,12 @@
           </ion-card>
           <div class="aboutcard">
             <div class="aboutitle">
-              <ion-title class="Rtitle">Rating</ion-title>
-              
-              <div class="rating" >
-                  <span *ngFor="let star of [1,2,3,4,5], let i = index" class="fa fa-star checked"></span>
-                  
+              <ion-title class="Rtitle">Review</ion-title>
+
+              <div class="rating">
+                <span *ngFor="let star of [0,1,2,3,4], let i = index" [ngStyle]="{'color':getColor(star)}"
+                  class="fa fa-star "></span>
+
               </div>
 
             </div>
@@ -28,17 +29,20 @@
                 <ion-title>About us</ion-title>
               </div>
               <div class="description">
-                "Asasa.com gives you a platform to visit portfolios of the top-notch architects from all over Pakistan and
-              select the one that suits you best to design your Dream Home. We've the most experienced architects with
-              us on board, See their past works here below and let us know how can we facilitate you to design your home
-              so you can enjoy the best living experience"
+                "Asasa.com gives you a platform to visit portfolios of the top-notch architects from all over Pakistan
+                and
+                select the one that suits you best to design your Dream Home. We've the most experienced architects with
+                us on board, See their past works here below and let us know how can we facilitate you to design your
+                home
+                so you can enjoy the best living experience"
               </div>
             </div>
             <div class="cardcontent">
-              <div class="aboutt">
-                <ion-title>About us</ion-title>
+              
+              <ion-title class="Architects">Architects</ion-title>
+              <div class="container" > 
+                <img  *ngFor="let person of name" [src]='person.url' alt="">
               </div>
-
             </div>
           </div>
         </ion-card>
