@@ -41,9 +41,7 @@
   margin: 5px;
   
 }
-.aboutcard {
 
-}
 .aboutt{
   padding: 5px;
   margin-top: -15px;
@@ -64,13 +62,28 @@
   background-position: top left,top left 19px,top left 38px,top left 57px,top left 76px;
 }
 .aboutitle {
-  padding: 5px;
+  padding: 7px;
     margin-top: 10px;
     box-shadow: 4px -17px 50px 0px rgba(0, 0, 0, 0.33);
     border-radius: 10px;
     /* margin-bottom: 0px; */
     margin: 5px;
+ 
+}
+.Rtitle{
+  display: inline-flex;
 }
 .checked {
-  color: orange;
+  color: #ffd000;
+}
+.rating{
+  display: inline-flex;
+  margin-left: 142px;
+}
+.description{
+  margin:14px;
+}
+.fa.fa-star{
+  margin-left: 3px;
+  font-size: 25px;
 }
