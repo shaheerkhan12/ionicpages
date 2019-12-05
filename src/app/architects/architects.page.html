@@ -1,0 +1,71 @@
+<ion-content no-margin>
+  <ion-grid no-padding>
+    <ion-row no-margin>
+      <ion-col class="colmn" no-margin>
+        <div class="stickyprofile">
+          <div class="profile">
+            <img class="img" src="assets/images.jpg">
+            <div class="title">
+              <h4 class="h4">ASASA TECH</h4>
+              <h6>Address</h6>
+            </div>
+            <div class="buttons">
+              <button class="message">About me!</button>
+              <button class="message">Message</button>
+            </div>
+
+          </div>
+          <div class="tabs">
+            <div class="Mywork" (click)="onclickMywork()" [ngStyle]="{'border-bottom-style':getStyle()}">
+              <h4 class="tabs">My work</h4>
+            </div>
+            <div class="details" (click)="onclickDetailswork()" [ngStyle]="{'border-bottom-style':getStyle1()}">
+              <h4 class="tabs">Details</h4>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+      <div class="tabs">
+          <div class="Grid" *ngIf='images'>
+            <div class="row">
+              <div class="column">
+                <img src="/assets/1.jpeg" style="width:100%">
+                <img src="/assets/2.jpeg" style="width:100%">
+                <img src="/assets/3.jpeg" style="width:100%">
+                <img src="/assets/4.jpeg" style="width:100%">
+                <img src="/assets/5.jpeg" style="width:100%">
+                <img src="/assets/6.jpeg" style="width:100%">
+                <img src="/assets/7.jpeg" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="/assets/8.jpeg" style="width:100%">
+                <img src="/assets/9.jpeg" style="width:100%">
+                <img src="/assets/10.jpeg" style="width:100%">
+                <img src="/assets/11.jpeg" style="width:100%">
+                <img src="/assets/12.jpeg" style="width:100%">
+                <img src="/assets/1.jpeg" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="/assets/2.jpeg" style="width:100%">
+                <img src="/assets/3.jpeg" style="width:100%">
+                <img src="/assets/5.jpeg" style="width:100%">
+                <img src="/assets/4.jpeg" style="width:100%">
+                <img src="/assets/6.jpeg" style="width:100%">
+                <img src="/assets/7.jpeg" style="width:100%">
+                <img src="/assets/9.jpeg" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="/assets/9.jpeg" style="width:100%">
+                <img src="/assets/8.jpeg" style="width:100%">
+                <img src="/assets/6.jpeg" style="width:100%">
+                <img src="/assets/4.jpeg" style="width:100%">
+                <img src="/assets/2.jpeg" style="width:100%">
+                <img src="/assets/1.jpeg" style="width:100%">
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>
