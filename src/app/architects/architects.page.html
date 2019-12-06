@@ -11,9 +11,8 @@
             </div>
             <div class="buttons">
               <button class="message">About me!</button>
-              <button class="message">Message</button>
+              <button class="message" (click)="presentModal()">Message</button>
             </div>
-
           </div>
           <div class="tabs">
             <div class="Mywork" (click)="onclickMywork()" [ngStyle]="{'border-bottom-style':getStyle()}">
@@ -26,46 +25,105 @@
         </div>
       </ion-col>
       <div class="tabs">
-          <div class="Grid" *ngIf='images'>
-            <div class="row">
-              <div class="column">
-                <img src="/assets/1.jpeg" style="width:100%">
-                <img src="/assets/2.jpeg" style="width:100%">
-                <img src="/assets/3.jpeg" style="width:100%">
-                <img src="/assets/4.jpeg" style="width:100%">
-                <img src="/assets/5.jpeg" style="width:100%">
-                <img src="/assets/6.jpeg" style="width:100%">
-                <img src="/assets/7.jpeg" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="/assets/8.jpeg" style="width:100%">
-                <img src="/assets/9.jpeg" style="width:100%">
-                <img src="/assets/10.jpeg" style="width:100%">
-                <img src="/assets/11.jpeg" style="width:100%">
-                <img src="/assets/12.jpeg" style="width:100%">
-                <img src="/assets/1.jpeg" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="/assets/2.jpeg" style="width:100%">
-                <img src="/assets/3.jpeg" style="width:100%">
-                <img src="/assets/5.jpeg" style="width:100%">
-                <img src="/assets/4.jpeg" style="width:100%">
-                <img src="/assets/6.jpeg" style="width:100%">
-                <img src="/assets/7.jpeg" style="width:100%">
-                <img src="/assets/9.jpeg" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="/assets/9.jpeg" style="width:100%">
-                <img src="/assets/8.jpeg" style="width:100%">
-                <img src="/assets/6.jpeg" style="width:100%">
-                <img src="/assets/4.jpeg" style="width:100%">
-                <img src="/assets/2.jpeg" style="width:100%">
-                <img src="/assets/1.jpeg" style="width:100%">
-              </div>
+        <div class="Grid" *ngIf='images'>
+          <div class="row">
+            <div class="column">
+              <img src="/assets/1.jpeg" style="width:100%">
+              <img src="/assets/2.jpeg" style="width:100%">
+              <img src="/assets/3.jpeg" style="width:100%">
+              <img src="/assets/4.jpeg" style="width:100%">
+              <img src="/assets/5.jpeg" style="width:100%">
+              <img src="/assets/6.jpeg" style="width:100%">
+              <img src="/assets/7.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="/assets/8.jpeg" style="width:100%">
+              <img src="/assets/9.jpeg" style="width:100%">
+              <img src="/assets/10.jpeg" style="width:100%">
+              <img src="/assets/11.jpeg" style="width:100%">
+              <img src="/assets/12.jpeg" style="width:100%">
+              <img src="/assets/1.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="/assets/2.jpeg" style="width:100%">
+              <img src="/assets/3.jpeg" style="width:100%">
+              <img src="/assets/5.jpeg" style="width:100%">
+              <img src="/assets/4.jpeg" style="width:100%">
+              <img src="/assets/6.jpeg" style="width:100%">
+              <img src="/assets/7.jpeg" style="width:100%">
+              <img src="/assets/9.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="/assets/9.jpeg" style="width:100%">
+              <img src="/assets/8.jpeg" style="width:100%">
+              <img src="/assets/6.jpeg" style="width:100%">
+              <img src="/assets/4.jpeg" style="width:100%">
+              <img src="/assets/2.jpeg" style="width:100%">
+              <img src="/assets/1.jpeg" style="width:100%">
             </div>
           </div>
-
         </div>
+
+      </div>
+      <div class="Grid" *ngIf='details'>
+        <div class="row">
+          <div class="column">
+            <ion-card class="cardproperties">
+              <h4 class="name">Shaheer khan</h4>
+              <h6 class="designation">Designation</h6>
+
+              <div class="container">
+                <h4 class="conttabnames" (click)="onclickbtn('A')"
+                  [ngStyle]="{'border-bottom-style':getsty('A'),'border-bottom-color':getcol('A')}">
+                  About</h4>
+                <h4 class="conttabnames" (click)="onclickbtn('B')"
+                  [ngStyle]="{'border-bottom-style':getsty('B'),'border-bottom-color':getcol('B')}">
+                  Contact</h4>
+                <h4 class="conttabnames" (click)="onclickbtn('C')"
+                  [ngStyle]="{'border-bottom-style':getsty('C'),'border-bottom-color':getcol('C')}">
+                  Address</h4>
+                <h4 class="conttabnames" (click)="onclickbtn('D')"
+                  [ngStyle]="{'border-bottom-style':getsty('D'),'border-bottom-color':getcol('D')}">
+                  MailingAddress</h4>
+                <hr class="hr">
+              </div>
+              <div class="conttabs" *ngIf='About'>
+                <p class="aboutstyle">The firm has been practicing since 1993-94 with a Liaison office in Quetta. Icon Architecture and
+                  Design provides a wholistic service including architecture, interior design and urban planning (Refer
+                  PROJECTS) to fulfill the needs of our clients for commercial, residential, institutional, health and
+                  corporate projects.</p>
+              </div>
+              <div class="conttabs" *ngIf='Contact'>
+                <div class="contact information">
+                  <p class="number">+9203155021042</p>
+                  <div class="tabs">
+                    <div class="numberdiv" (click)="onclickMywork()">
+                      <h4 class="numberbtn">Call me!</h4>
+                    </div>
+                    <div class="numberdiv" (click)="onclickDetailswork()">
+                      <h4 class="numberbtn">Leave a message</h4>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="conttabs" *ngIf='Address'>
+                <div class="Address">
+                  <p>Office # 1, First Floor, Building 1A, Block R, Blue Area, Islamabad.</p>
+                  <button class="copyemailbtn">Copy Address!</button>
+                </div>
+              </div>
+              <div class="conttabs" *ngIf='MailingAddress'>
+                <div class="MAddress">
+                 <p class="email">Khanshaheer076@gmail.com</p>
+                 <button class="copyemailbtn">Copy email!</button>
+                </div>
+              </div>
+            </ion-card>
+          </div>
+        </div>
+      </div>
     </ion-row>
   </ion-grid>
+
 </ion-content>

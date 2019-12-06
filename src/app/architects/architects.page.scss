@@ -13,30 +13,29 @@
   margin: 34px;
   display: block;
 }
-.h4{
-    margin-bottom: -12px;
-    margin-bottom: -12px;
-    font-family: serif;
-    font: caption;
-    font-weight: bold;
+.h4 {
+  margin-bottom: -12px;
+  margin-bottom: -12px;
+  font-family: serif;
+  font: caption;
+  font-weight: bold;
 }
-.buttons{
-    margin-right: -6px;
-    text-align: end;
-    padding-top: 91px;
-    right: -127px;
+.buttons {
+  margin-right: -6px;
+  text-align: end;
+  padding-top: 91px;
+  right: -127px;
 }
-.message{
-    background-color: white;
-    color: #7a9090cc;
-    border: 1px solid;
-    border-radius: 30px;
-    font-family: sans-serif;
-    font-size: 11px;
-    margin: 3px;
-    font-weight: normal;
-    padding: 7px 12px 7px 10px;
-    
+.message {
+  background-color: white;
+  color: #7a9090cc;
+  border: 1px solid;
+  border-radius: 30px;
+  font-family: sans-serif;
+  font-size: 11px;
+  margin: 3px;
+  font-weight: normal;
+  padding: 7px 12px 7px 10px;
 }
 .img {
   box-shadow: 1px 4px 11px 3px rgba(0, 0, 0, 0.38);
@@ -47,67 +46,157 @@
   width: 33%;
 }
 .title {
-  
-    position: absolute;
-    top: 8px;
-    margin-right: 33px;
-    margin-top: 33px;
-    right: 40px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font: menu;
-    font-size: 18px;
-    color: #2224288f;
-
+  position: absolute;
+  top: 8px;
+  margin-right: 33px;
+  margin-top: 33px;
+  right: 40px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font: menu;
+  font-size: 18px;
+  color: #2224288f;
 }
 
-.tabs{
-    font-size: 14px;
-    text-align: center;
-    font-family: cursive;
-    color: dimgrey;
+.tabs {
+  font-size: 14px;
+  text-align: center;
+  font-family: cursive;
+  color: dimgrey;
 }
-.details{
-    display: inline-block;
-    width: 50%;
-    box-shadow: 1px 0px 11px 0px rgba(0, 0, 0, 0.13);
-    /* background-color: white; */
-    border-right-style: none;
-    border-radius: 5px;
+.details {
+  display: inline-block;
+  width: 50%;
+  box-shadow: 1px 0px 11px 0px rgba(0, 0, 0, 0.13);
+  /* background-color: white; */
+  border-right-style: none;
+  border-radius: 5px;
 }
-.Mywork{
-    display: inline-block;
-    width: 50%;
-    box-shadow: 1px 0px 11px 0px rgba(0, 0, 0, 0.13);
-    /* background-color: white; */
-    border-right-style: none;
-    border-radius: 5px;
+.Mywork {
+  display: inline-block;
+  width: 50%;
+  box-shadow: 1px 0px 11px 0px rgba(0, 0, 0, 0.13);
+  /* background-color: white; */
+  border-right-style: none;
+  border-radius: 5px;
 }
 .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  .Grid{
-      margin-top: 5px;
-      width:100%;
-  }
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 126px;
-    /* max-width: 80%; */
-    padding: 0 4px;
-  }
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.Grid {
+  margin-top: 5px;
+  width: 100%;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 126px;
+  /* max-width: 80%; */
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 3px;
+  width: 100%;
+}
+.colmn {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+.cardproperties {
+  box-shadow: 1px 4px 11px 3px rgba(0, 0, 0, 0.14);
+  /* width: 100%; */
+}
+.name {
+  text-align: center;
+  color: #484646;
+  font-weight: bold;
+  font-family: none;
+}
+.designation {
+  text-align: center;
+  margin-top: -8px;
+}
+.container {
+  display: -webkit-box;
+
+  overflow-x: auto;
+  width: 100%;
+  margin-left: 4px;
+  position: absolute;
+}
+.container h4 {
+  font-family: none;
+  font-size: large;
+  padding-bottom: 5px;
+
+  /* border-bottom-color: dimgray; */
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.conttabs {
+  margin: 25px;
+  margin-top: 79px;
+  text-align: justify;
+}
+.conttabnames {
+  border-radius: 6px;
+  margin-left: 10px;
+  padding-right: 23px;
+  padding-left: 21px;
+}
+
+.number {
+  text-align: center;
+}
+.numberbtn {
+  font-size: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.numberdiv {
+  margin-left: 5px;
+  padding: 2px;
+  padding-top: -10px;
+  display: inline-block;
+  width: 35%;
+  box-shadow: -2px 5px 11px 1px rgba(0, 0, 0, 0.29);
+  border-right-style: none;
+  border-radius: 20px;
+  color: white;
+  background-color: #38bba2;
+}
+.Address {
+  text-align: center;
+  margin: 43px;
+}
+.MAddress{
   
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    border-radius: 3px;
-    width: 100%;
-  }
-.colmn{
-        position: sticky;
-    top: 0;
-    background: white;
+  text-align: center;
+}
+.email{
+  color: #484646;
+}
+.copyemailbtn {
+  background-color: #38bba2;
+  color: #ffffffcc;
+  border: 1px solid;
+  border-radius: 30px;
+  font-family: sans-serif;
+  font-size: 11px;
+  margin: 3px;
+  font-weight: normal;
+  padding: 7px 12px 7px 10px;
+}
+.hr{
+  border-width: 1px !important;
+}
+.aboutstyle{
+  font-family: -webkit-body;
 }

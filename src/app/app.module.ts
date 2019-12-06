@@ -10,10 +10,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModalModule } from 'ngx-bootstrap/modal';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FontAwesomeModule  ],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FontAwesomeModule, ModalModule.forRoot()],
   providers: [
     StatusBar,
     SplashScreen,
@@ -21,4 +22,4 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
