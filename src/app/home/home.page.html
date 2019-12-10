@@ -14,16 +14,7 @@
             </div>
           </ion-card>
           <div class="aboutcard">
-            <div class="aboutitle">
-              <ion-title class="Rtitle">Review</ion-title>
 
-              <div class="rating">
-                <span *ngFor="let star of [0,1,2,3,4], let i = index" [ngStyle]="{'color':getColor(star)}"
-                  class="fa fa-star "></span>
-
-              </div>
-
-            </div>
             <div class="cardcontent">
               <div class="aboutt">
                 <ion-title>About us</ion-title>
@@ -38,10 +29,14 @@
               </div>
             </div>
             <div class="cardcontent">
-              
+
               <ion-title class="Architects">Architects</ion-title>
-              <div class="container" > 
-                <img  *ngFor="let person of name" [src]='person.url' alt="">
+              <div class="container">
+                <div class="archdiv" *ngFor="let person of names" >
+                  <img  [src]='person.url' alt="" routerLink="/architects">
+                  <h6 class="nametag">{{person.name}}</h6>
+                </div>
+
               </div>
             </div>
           </div>

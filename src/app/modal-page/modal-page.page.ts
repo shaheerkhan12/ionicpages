@@ -7,7 +7,7 @@ import { NavParams } from '@ionic/angular';
   styleUrls: ['./modal-page.page.scss'],
 })
 export class ModalPagePage implements OnInit {
-
+  url;
   // Data passed in by componentProps
   @Input() firstName: string;
   @Input() lastName: string;
@@ -26,6 +26,7 @@ export class ModalPagePage implements OnInit {
     });
   }
   ngOnInit() {
+    console.log(`${this.url}`);
   }
 
 }

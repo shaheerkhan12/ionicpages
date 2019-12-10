@@ -9,7 +9,7 @@ Orange = '#FFCA28',
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  name = [ { name: 'danish', pos: 'developer', url: '../../assets/person.jpg'},
+  names = [ { name: 'danish', pos: 'developer', url: '../../assets/person.jpg'},
   { name: 'shaheer', pos: 'developer', url: '../../assets/best.jpg'},
   { name: 'usman', pos: 'developer', url: '../../assets/person1.jpg'},
 {name: 'usman', pos: 'developer', url: '../../assets/img_avatar1.png'}];
